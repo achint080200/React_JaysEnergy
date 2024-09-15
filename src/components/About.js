@@ -21,14 +21,14 @@ const About = () => {
   return (
     <div className='text-black text-3xl font-[Sans]'>
       {/* Section 1 */}
-      <div ref={section1Ref} className='w-full mt-[100px] py-[10vh] my-[20px] h-[80vh] bg-[#1f1f1f] rounded-br-[10vw] flex flex-col'>
+      <div ref={section1Ref} className='w-full mt-[100px] sm:py-[10vh] my-[20px] h-auto bg-[#1f1f1f] rounded-br-[10vw] flex flex-col'>
         <motion.div 
-          className='mx-[30vw] font-[Mona Sans] w-[40vw]'
+          className='sm:mx-[30vw] font-[Mona Sans] w-screen sm:w-[40vw]'
           variants={staggerContainer}
           initial="hidden"
           animate={section1InView ? "visible" : "hidden"}
         >
-          <motion.h1 className='text-5xl capitalize text-white font-bold border-b-2 pb-3 border-green-400 w-[50vw] block'
+          <motion.h1 className='text-5xl capitalize text-white font-bold border-b-2 pb-3 border-green-400 w-screen sm:w-[50vw] block'
             variants={leftToRightVariant}
           >
             Welcome to JaysEnergy
@@ -46,8 +46,8 @@ const About = () => {
       </div>
 
       {/* Section 2: Image and List */}
-      <div className='flex flex-row items-center gap-[200px]'>
-        <div ref={section2Ref} className='mt-[0px] w-6/12 h-[60vh]'>
+      <div className='sm:flex flex-row items-center gap-[200px]'>
+        <div ref={section2Ref} className='mt-[0px] w-screen sm:w-6/12 h-[60vh]'>
           <motion.img 
             initial={{ opacity: 0, scale: 0 }}
             animate={section2InView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
@@ -60,17 +60,17 @@ const About = () => {
 
         {/* List with staggered animations */}
         <motion.div 
-          className='grid grid-cols-2 -space-x-[250px] items-center'
+          className=' flex  sm:grid grid-cols-2 sm:-space-x-[250px] sm:items-center '
           initial="hidden"
           animate={section2InView ? "visible" : "hidden"}
           variants={staggerContainer}
         >
-          <motion.div variants={leftToRightVariant}>
-            <ul>
-              <motion.li className='mb-[30px]' variants={leftToRightVariant}>
+          <motion.div variants={leftToRightVariant} className='flex'>
+            <ul className='hidden sm:block'>
+              <motion.li className='mb-[50px]' variants={leftToRightVariant}>
                 <div className='w-[40px] h-[40px] bg-black rounded-full'></div>
               </motion.li>
-              <motion.li className='mb-[30px]' variants={leftToRightVariant}>
+              <motion.li className='mb-[50px]' variants={leftToRightVariant}>
                 <div className='w-[40px] h-[40px] bg-black rounded-full'></div>
               </motion.li>
               <motion.li className='mb-[30px]' variants={leftToRightVariant}>
@@ -79,7 +79,7 @@ const About = () => {
             </ul>
           </motion.div>
 
-          <div className='pl-[2vw]'>
+          <div className='pl-[2vw] -mt-[200px] sm:mt-0 '>
             <motion.h1 className='mt-[25px]' variants={leftToRightVariant}>Plant Engineering</motion.h1>
             <motion.h3 className='text-[15px]' variants={leftToRightVariant}>Basic Engineering Packages (BEP) and Front-End Engineering Design (FEED)</motion.h3>
             <motion.h1 className='mt-[25px]' variants={leftToRightVariant}>Drafting services</motion.h1>
@@ -91,7 +91,7 @@ const About = () => {
       </div>
 
       {/* Final Section */}
-      <div className='w-[70vw] mx-[15vw] h-[25vh] bg-black mt-[30px] rounded-tl-[10vw] rounded-br-[10vw]'>
+      <div className='w-[70vw] mx-[15vw] h-auto bg-black mt-[30px] rounded-tl-[10vw] rounded-br-[10vw]'>
         <h1 className='pl-[40px] py-[40px] text-white text-4xl capitalize font-[Sans]'>Our Promise is to Deliver Innovative and Efficient Engineering Design Solutions Tailored to the Unique Needs</h1>
       </div>
     </div>

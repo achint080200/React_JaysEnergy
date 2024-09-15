@@ -9,9 +9,9 @@ const Header = () => {
 
   return (
     <div className=' mt-[20px] '>
-      <div className={`fixed top-0   border-b-[0.2px] border-white  z-[10] w-full px-16 py-3 font-['Neue Montreal'] bg-zinc-100 flex justify-between items-center opacity-100  ${isHome ? 'text-black' : 'text-black'}`}>
+      <div className={`fixed top-0   border-b-[0.2px] border-white  z-[10]   sm:w-full px-16 py-3 font-['Neue Montreal'] bg-zinc-100 sm:flex sm:justify-between sm:items-center opacity-100  ${isHome ? 'text-black' : 'text-black'}`}>
         <p className={`${isHome && ""} text-3xl`}>JaysEnergy</p>
-        <div className='flex gap-10'>
+        <div className='flex -ml-[10px] gap-[10px]  sm:gap-10'>
           {["Home", "About", "Services", "Projects", "ContactUs"].map((item, index) => {
             const path = item === "Home" ? "/" : `/${item.toLowerCase()}`;
             return (
@@ -19,7 +19,7 @@ const Header = () => {
                 key={index}
                 to={path}
                 className={({ isActive }) =>
-                  `text-lg font-light capitalize ${index === 4 && "ml-32"} ${isActive ? "border-b-2 border-black" : " border-black"} 
+                  `text-lg font-light capitalize ${index === 4 && "sm:ml-32"} ${isActive ? "border-b-2 border-black" : " border-black"} 
                    `
                 }
               >

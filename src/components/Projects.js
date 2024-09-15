@@ -43,26 +43,26 @@ const Projects = () => {
     },
   };
   return (
-    <div className='mt-[70px]'>
-      <div className='grid w-screen h-full   grid-cols-2 grid-rows-6'>
-        <div className=' h-[70vh] '>
-          <img className=' w-full h-full object-cover' src={Picture1} alt='no redner'/>
+    <div className='sm:mt-[70px] mt-[100px]'>
+      <div className='sm:grid  w-screen sm:h-full   grid-cols-2 grid-rows-6'>
+        <div className='hidden sm:block sm:h-full '>
+          <img className=' w-full sm:h-full object-cover' src={Picture1} alt='no redner'/>
         </div>
-        <div className=' h-[70vh] border-t-2 border-gray-200'>
+        <div className=' h-auto border-t-2 border-gray-200'>
         <motion.div
             ref={ref1}
             initial="hidden"
             animate={isInView1 ? "visible" : "hidden"}
             variants={staggerContainer}
-            className='m-[10vw] font-[icomoon]'
+            className='m-[10vw] font-[icomoon] h-auto'
           >
             <motion.h1 variants={textVariants} className='capitalize text-3xl font-bold'>
               GAS COMPRESSOR UNIT
             </motion.h1>
-            <motion.p variants={textVariants} className='my-[10px]'>
+            <motion.p variants={textVariants} className='my-[30px]'>
               Detailed design and engineering of a Gas Compressor unit, skid package with a positive displacement compressor, and separators to compress natural gas.
             </motion.p>
-            <motion.p variants={textVariants} className='my-[10px]'>
+            <motion.p variants={textVariants} className='my-[30px]'>
               Designing the skid package with limited space on-site, we performed stress analysis and dynamic analysis for all process lines. The skid package area measures nearly 50′ X 42′.
             </motion.p>
             <motion.p variants={textVariants}>
@@ -71,7 +71,7 @@ const Projects = () => {
           </motion.div>
           
         </div>
-        <div className='h-[70vh]   border-l-2 border-gray-200'>
+        <div className='h-auto   border-l-2 border-gray-200'>
         <motion.div
             ref={ref2}
             initial="hidden"
@@ -82,10 +82,10 @@ const Projects = () => {
             <motion.h1 variants={textVariants} className='capitalize text-3xl font-bold'>
               GAS DEHYDRATION UNIT
             </motion.h1>
-            <motion.p variants={textVariants} className='my-[10px]'>
+            <motion.p variants={textVariants} className='my-[30px]'>
               Provided detailed engineering scope & procurement support for a gas dehydration unit. The purpose of a glycol dehydration unit is to remove water from natural gas and natural gas liquids when produced from a reservoir.
             </motion.p>
-            <motion.p variants={textVariants} className='my-[10px]'>
+            <motion.p variants={textVariants} className='my-[30px]'>
               Involved in designing process & design data with equipment datasheets, communicated with vendors based in the USA for procurement, and actively participated in the equipment purchase with the client.
             </motion.p>
             <motion.p variants={textVariants}>
@@ -94,13 +94,13 @@ const Projects = () => {
           </motion.div>
 
         </div>
-        <div className=' h-[70vh] '>
+        <div className='hidden sm:block h-full '>
           <img className=' w-full h-full object-cover' src={Picture6} alt='no redner'/>
         </div>
-        <div className=' h-[70vh] '>
+        <div className='hidden sm:block h-full '>
          <img className=' w-full h-full object-cover' src={Picture5} alt='no redner'/>
         </div>
-        <div className=' h-[70vh]  border-r-2 border-gray-200'>
+        <div className=' h-auto  border-r-2 border-gray-200'>
         <motion.div
             ref={ref3}
             initial="hidden"
@@ -111,7 +111,7 @@ const Projects = () => {
             <motion.h1 variants={textVariants} className='capitalize text-3xl font-bold'>
               YIBAL LASER SCAN MODELING
             </motion.h1>
-            <motion.p variants={textVariants} className='my-[10px]'>
+            <motion.p variants={textVariants} className='my-[30px]'>
               Handled large-scale laser scan data and incorporated all discipline’s existing laser scan details into the 3D Model. Referred to existing deliverables and documents to update the 3D model and transform it into an Intelligent model.
             </motion.p>
             <motion.p variants={textVariants}>
@@ -120,7 +120,7 @@ const Projects = () => {
           </motion.div>
 
         </div>
-        <div className=' h-[70vh]  border-l-2 border-gray-200'>
+        <div className=' h-auto  border-l-2 border-gray-200'>
         <motion.div
             ref={ref4}
             initial="hidden"
@@ -131,7 +131,7 @@ const Projects = () => {
             <motion.h1 variants={textVariants} className='capitalize text-3xl font-bold'>
               INCINERATOR PACKAGE
             </motion.h1>
-            <motion.p variants={textVariants} className='my-[10px]'>
+            <motion.p variants={textVariants} className='my-[30px]'>
               Detailed design & engineering of Incineration packages and utility area. Designing high end structure and arranged all equipment in critical existing area.
             </motion.p>
             <motion.p variants={textVariants}>
@@ -140,36 +140,36 @@ const Projects = () => {
           </motion.div>
 
         </div>
-        <div className=' h-[70vh] '>
+        <div className=' h-full hidden sm:block '>
          <img className=' w-full h-full object-cover' src={Picture4} alt='no redner'/>
         </div>
-        <div className=' h-[70vh] '>
+        <div className=' h-full hidden sm:block '>
          <img className=' w-full h-full object-cover' src={Picture3} alt='no redner'/>
         </div>
-        <div className=' h-[70vh]  border-r-2 border-gray-200'>
+        <div className=' h-auto  border-r-2 border-gray-200'>
         <motion.div
             ref={ref5}
             initial="hidden"
             animate={isInView5 ? "visible" : "hidden"}
             variants={staggerContainer}
-            className='m-[10vw] font-[icomoon]'
+            className='m-[10vw] font-[icomoon] '
           >
             <motion.h1 variants={textVariants} className='capitalize text-3xl font-bold'>
               GAS DE-HYDRATION UNIT EXPANSION
             </motion.h1>
-            <motion.p variants={textVariants} className='my-[10px]'>
+            <motion.p variants={textVariants} className='my-[30px]'>
               Provided detailed engineering expansion scope and procurement support for gas dehydration. The purpose of a glycol dehydration unit is to remove water from natural gas and natural gas liquids when produced from a reservoir.
             </motion.p>
-            <motion.p variants={textVariants} className='my-[10px]'>
+            <motion.p variants={textVariants} className='my-[30px]'>
               We were involved in designing process and design data with equipment datasheets. We also communicated with a vendor based in the USA for procurement of equipment and actively participated in the purchase of available equipment along with the client.
             </motion.p>
-            <motion.p variants={textVariants} className='my-[10px]'>
+            <motion.p variants={textVariants} className='my-[30px]'>
               Additionally, we were responsible for the preparation of process, plant, and mechanical drawings & documents, as well as the generation of a 3D model.
             </motion.p>
           </motion.div>
 
         </div>
-        <div className=' h-[70vh]  border-2 border-gray-200'>
+        <div className=' h-auto  border-2 border-gray-200'>
             <motion.div 
             ref={ref6}
             initial="hidden"
@@ -178,13 +178,13 @@ const Projects = () => {
             className='m-[10vw] font-[icomoon]'>
                 <motion.h1 variants={textVariants} className='capitalise text-3xl font-bold '>OIL & WATER CONSOLE
                 </motion.h1>
-                <motion.h1 variants={textVariants} className='my-[10px]'>Standardize Utility consoles by preparing detailed design solution for multiple project capacity. The purpose of standardizing console is to minimize engineering timeline by preparing ‘ready to execute engineering solution.’</motion.h1>
+                <motion.h1 variants={textVariants} className='my-[30px]'>Standardize Utility consoles by preparing detailed design solution for multiple project capacity. The purpose of standardizing console is to minimize engineering timeline by preparing ‘ready to execute engineering solution.’</motion.h1>
                 
                 
               </motion.div>
 
         </div>
-        <div className=' h-[70vh] '>
+        <div className=' h-full hidden sm:block '>
          <img className=' w-full h-full object-cover' src={Picture2} alt='no redner'/>
         </div>
         

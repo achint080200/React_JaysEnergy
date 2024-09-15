@@ -31,20 +31,20 @@ const ContactUs = () => {
 
   return (
     <div className='mt-[200px]'>
-      <div className='w-[100vw] h-[60vh]  font-[Test_Founders_Grotesk_X-Condensed]'>
+      <div className='w-[100vw] h-auto mb-[100px] sm:h-[60vh]  font-[Test_Founders_Grotesk_X-Condensed] '>
         {["Let's Start", "A project together"].map((item, index) => (
           <motion.h1
             key={index}
             initial={{ x: -100 }}
             animate={{ x: 50 }}
             transition={{ s: 2000 }}
-            className='uppercase text-8xl leading-[7vw] tracking-tight font-semibold'
+            className='uppercase text-4xl sm:text-8xl leading-[7vw] tracking-tight font-semibold'
           >
             {item}
           </motion.h1>
         ))}
       </div>
-      <div className='flex gap-[300px] mx-[60px]'>
+      <div className='sm:flex gap-[300px] mx-[60px]'>
         <div>
           <h1 className='text-3xl font-semibold mb-[100px]'>Inquiries:</h1>
           <h3 className='w-[150px]'>Please fill out the form on the right or email us directly.</h3>
@@ -55,10 +55,10 @@ const ContactUs = () => {
               Thank you! Your form has been successfully submitted.
             </div>
           ) : (
-            <form onSubmit={formik.handleSubmit} className='flex flex-col gap-y-2'>
+            <form onSubmit={formik.handleSubmit} className='sm:flex flex-col gap-y-2 '>
               <label className='-mb-2'>Name: *</label>
               <input
-                className={`border ${formik.errors.name && formik.touched.name ? 'border-red-400' : 'border-green-400'} w-[600px] py-0.5 px-2`}
+                className={`border ${formik.errors.name && formik.touched.name ? 'border-red-400' : 'border-green-400'}  w-[70vw] sm:w-[600px] py-0.5 px-2`}
                 type='text'
                 name='name'
                 onChange={formik.handleChange}
@@ -69,7 +69,7 @@ const ContactUs = () => {
 
               <label className='-mb-2'>Email Address: *</label>
               <input
-                className={`border ${formik.errors.email && formik.touched.email ? 'border-red-400' : 'border-green-400'} w-[600px] py-0.5 px-2`}
+                className={`border ${formik.errors.email && formik.touched.email ? 'border-red-400' : 'border-green-400'} w-[70vw] sm:w-[600px] py-0.5 px-2`}
                 type='email'
                 name='email'
                 onChange={formik.handleChange}
@@ -80,7 +80,7 @@ const ContactUs = () => {
 
               <label className='-mb-2'>Subject: *</label>
               <input
-                className={`border ${formik.errors.subject && formik.touched.subject ? 'border-red-400' : 'border-green-400'} w-[600px] py-0.5 px-2`}
+                className={`border ${formik.errors.subject && formik.touched.subject ? 'border-red-400' : 'border-green-400'} w-[70vw] sm:w-[600px] py-0.5 px-2`}
                 type='text'
                 name='subject'
                 onChange={formik.handleChange}
@@ -91,7 +91,7 @@ const ContactUs = () => {
 
               <label className='-mb-2'>Company: *</label>
               <input
-                className={`border ${formik.errors.company && formik.touched.company ? 'border-red-400' : 'border-green-400'} w-[600px] py-0.5 px-2`}
+                className={`border ${formik.errors.company && formik.touched.company ? 'border-red-400' : 'border-green-400'} w-[70vw] sm:w-[600px] py-0.5 px-2`}
                 type='text'
                 name='company'
                 onChange={formik.handleChange}
@@ -102,7 +102,7 @@ const ContactUs = () => {
 
               <label className='-mb-2'>Project Summary: *</label>
               <textarea
-                className={`border ${formik.errors.summary && formik.touched.summary ? 'border-red-400' : 'border-green-400'} w-[600px] h-[15vh] py-0.5 px-2`}
+                className={`border ${formik.errors.summary && formik.touched.summary ? 'border-red-400' : 'border-green-400'} w-[70vw] sm:w-[600px] h-[15vh] py-0.5 px-2`}
                 name='summary'
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}

@@ -70,7 +70,7 @@ const Home = () => {
         </motion.div>
 
         {/* Example Service Cards */}
-        <div className="grid grid-cols-3 gap-8 w-[80%]">
+        <div className="sm:grid sm:grid-cols-3 sm:gap-8 flex flex-col gap-5 w-[80%]">
           {[1, 2, 3].map((item, index) => (
             <motion.div
               key={index}
@@ -103,17 +103,17 @@ const Home = () => {
               
               <h3 className="text-2xl font-bold mt-4">Service {item}</h3>{
                 item === 1 &&  <><h1 className='text-xl font-semibold mt-[1vw] '>Plant Engineering </h1>
-                <h4 className=' text-[1vw] mt-[1vw]'>Our core area of expertise is in the development of Basic Engineering Packages (BEP) and Front-End Engineering Design (FEED)</h4></>
+                <h4 className=' sm:text-[1vw] mt-[1vw]'>Our core area of expertise is in the development of Basic Engineering Packages (BEP) and Front-End Engineering Design (FEED)</h4></>
                 
               }
               {
                 item === 2 && <><h1 className='text-xl font-semibold mt-[1vw] '>Drafting Services </h1>
-              <h4 className=' text-[1vw] mt-[1vw]'>2D & 3D Modeling Services related to Plant Layout Engineering</h4></>
+              <h4 className=' sm:text-[1vw] mt-[1vw]'>2D & 3D Modeling Services related to Plant Layout Engineering</h4></>
               }
               {
                 item === 3 && <>
                 <h1 className='text-xl font-semibold mt-[1vw] '>Project Engineering & Management Services </h1>
-                <h4 className=' text-[1vw] mt-[1vw]'>Our experinced professionals offer project management services ranging from bid documents, vender sourcing, quality management, inspection, and many more.</h4></>
+                <h4 className=' sm:text-[1vw] mt-[1vw]'>Our experinced professionals offer project management services ranging from bid documents, vender sourcing, quality management, inspection, and many more.</h4></>
               }
               
             </motion.div>
