@@ -43,7 +43,7 @@ const Services = () => {
           initial={{scale:0}}
           animate={{scale: 1}}
           transition={{duration:1}}
-          className='border border-green-400 bg-green-100 rounded-[100px]  sm:w-[25vw] mb-3 sm:mb-0 h-auto '>
+          className='border border-black  rounded-[100px]  sm:w-[25vw] mb-3 sm:mb-0 h-auto '>
             <div className=' m-[7vw] sm:m-[2vw] '>
               <img className='sm:w-[3vw] ml-[2vw]' src={icon1} alt='no render'/>
               <h1 className='text-xl font-semibold mt-[1vw] '>Plant Engineering </h1>
@@ -71,7 +71,7 @@ const Services = () => {
           animate={{scale:1}}
           transition={{duration:1}} 
           
-          className='border border-green-400 bg-green-100 rounded-[100px] sm:w-[25vw] mb-3 sm:mb-0 auto'>
+          className='border border-black  rounded-[100px] sm:w-[25vw] mb-3 sm:mb-0 auto'>
             <div className='m-[7vw] sm:m-[2vw]'>
               <img className='sm:w-[3vw] ml-[2vw] ' src={icon2} alt='no render'/>
               <h1 className='sm:text-xl font-semibold mt-[1vw] '>Drafting Services </h1>
@@ -95,7 +95,7 @@ const Services = () => {
           animate={{scale:1}}
           transition={{duration:1}}
           
-          className='border border-green-400 bg-green-100  rounded-[100px] sm:w-[25vw] h-auto'>
+          className='border border-black  rounded-[100px] sm:w-[25vw] h-auto'>
             <div className='m-[7vw] sm:m-[2vw]'>
               <img className='sm:w-[3vw] ml-[2vw] ' src={icon3} alt='no render'/>
               <h1 className='sm:text-xl font-semibold mt-[1vw] '>Project Engineering & Management Services </h1>

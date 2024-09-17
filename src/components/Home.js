@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
-    <div className="w-full h-auto text-white font-[Sans]">
+    <div className="w-screen h-auto text-white font-[Sans]">
       {/* Hero Section */}
       <div className="relative h-screen bg-[url('https://mppesp.com/wp-content/uploads/2023/11/pexels-loic-manegarium-3855962-scaled.jpg')] bg-cover bg-center flex justify-center items-center">
         <motion.div
