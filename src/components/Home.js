@@ -41,7 +41,7 @@ const Home = () => {
           className="text-center w-[60%]"
         >
           <h2 className="text-4xl font-bold border-b-2 pb-2 border-green-400 mb-6">
-            Why JaysEnergy?
+            Why JayzEnergy?
           </h2>
           <p className="text-lg">
             Because we Manage Projects Professionally
@@ -103,17 +103,18 @@ const Home = () => {
               
               <h3 className="text-2xl font-bold mt-4">Service {item}</h3>{
                 item === 1 &&  <><h1 className='text-xl font-semibold mt-[1vw] '>Plant Engineering </h1>
-                <h4 className=' sm:text-[1vw] mt-[1vw]'>Our core area of expertise is in the development of Basic Engineering Packages (BEP) and Front-End Engineering Design (FEED)</h4></>
+                <h4 className=' sm:text-[1vw] mt-[1vw]'>Optimizing plant layouts and designs to ensure smooth process flow, safety, and reliability. Our designs improve productivity, minimize downtime, and support long-term operational goals.</h4></>
                 
               }
               {
-                item === 2 && <><h1 className='text-xl font-semibold mt-[1vw] '>Drafting Services </h1>
-              <h4 className=' sm:text-[1vw] mt-[1vw]'>2D & 3D Modeling Services related to Plant Layout Engineering</h4></>
+                item === 2 && <><h1 className='text-xl font-semibold mt-[1vw] '>Operational Excellence </h1>
+              <h4 className=' sm:text-[1vw] mt-[1vw]'>We help our clients streamline operations with lean manufacturing principles, ensuring efficient processes, minimized waste, and timely project execution.
+              </h4></>
               }
               {
                 item === 3 && <>
-                <h1 className='text-xl font-semibold mt-[1vw] '>Project Engineering & Management Services </h1>
-                <h4 className=' sm:text-[1vw] mt-[1vw]'>Our experinced professionals offer project management services ranging from bid documents, vender sourcing, quality management, inspection, and many more.</h4></>
+                <h1 className='text-xl font-semibold mt-[1vw] '>Regulatory Compliance </h1>
+                <h4 className=' sm:text-[1vw] mt-[1vw]'>We ensure full adherence to Canadian regulatory standards across industries, from environmental regulations to safety protocols, giving you peace of mind throughout the project lifecycle.</h4></>
               }
               
             </motion.div>

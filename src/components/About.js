@@ -34,25 +34,28 @@ const About = () => {
             Welcome to JaysEnergy
           </motion.h1>
           <motion.p className='my-4 text-white text-[18px]' variants={leftToRightVariant}>
-            where innovation meets precision in the world of mechanical design engineering. Founded by three dynamic professionals with a shared passion for mechanical excellence and project management expertise.
+          Where innovation meets precision in engineering design.
           </motion.p>
           <motion.p className='my-4 text-white text-[18px]' variants={leftToRightVariant}>
-            We believe in the power of collaboration and the transformative impact of well-engineered solutions. Our founders bring a collective wealth of experience in mechanical engineering and project management. United by a common goal, we set out to establish a business that not only meets but exceeds the expectations of our clients.
+          Located in Sarnia, we are committed to supporting the local industry with fit-to-purpose engineering solutions. Founded by highly qualified professionals in mechanical, electrical, and process engineering with Canadian education, Jayz Energy delivers efficient, tailored solutions designed to meet your specific needs.
           </motion.p>
           <motion.p className='text-white text-[18px]' variants={leftToRightVariant}>
-            We understand that every project is distinct, and our approach reflects the diversity of challenges that the industry presents. Whether it’s optimizing existing systems or designing from the ground up, MPP is dedicated to delivering results that stand the test of time.
+          We believe in collaboration and the transformative power of well-engineered systems. Our team combines expertise to exceed client expectations, providing reliable, lasting results.
+          </motion.p>
+          <motion.p className='text-white text-[18px]' variants={leftToRightVariant}>
+          Whether optimizing existing systems or designing new ones, Jayz Energy delivers solutions that are built to last and fit for purpose, meeting the unique challenges of your projects.
           </motion.p>
         </motion.div>
       </div>
 
       {/* Section 2: Image and List */}
       <div className='sm:flex flex-row items-center gap-[200px]'>
-        <div ref={section2Ref} className='mt-[0px] w-screen sm:w-6/12 h-[60vh]'>
+        <div ref={section2Ref} className='mt-[0px] w-screen sm:w-10/12 h-[60vh]'>
           <motion.img 
             initial={{ opacity: 0, scale: 0 }}
             animate={section2InView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
             transition={{ duration: 0.5 }}
-            className='object-cover rounded-br-[200px]'
+            className='object-cover rounded-br-[200px] h-full w-full'
             src='https://mppesp.com/wp-content/uploads/2023/11/pexels-magda-ehlers-2569842-scaled.jpg' 
             alt='no render'
           />
@@ -60,32 +63,37 @@ const About = () => {
 
         {/* List with staggered animations */}
         <motion.div 
-          className=' flex  sm:grid grid-cols-2 sm:-space-x-[250px] sm:items-center '
+          className=' flex  sm:grid grid-cols-2 sm:-space-x-[320px] sm:items-center '
           initial="hidden"
           animate={section2InView ? "visible" : "hidden"}
           variants={staggerContainer}
         >
-          <motion.div variants={leftToRightVariant} className='flex'>
-            <ul className='hidden sm:block'>
-              <motion.li className='mb-[50px]' variants={leftToRightVariant}>
+          <motion.div variants={leftToRightVariant} className='flex '>
+            <ul className='hidden sm:block -mt-[4vh]'>
+              <motion.li className='mb-[150px]' variants={leftToRightVariant}>
                 <div className='w-[40px] h-[40px] bg-black rounded-full'></div>
               </motion.li>
-              <motion.li className='mb-[50px]' variants={leftToRightVariant}>
+              <motion.li className='mb-[100px] -mt-[8vh]' variants={leftToRightVariant}>
                 <div className='w-[40px] h-[40px] bg-black rounded-full'></div>
               </motion.li>
-              <motion.li className='mb-[30px]' variants={leftToRightVariant}>
+              <motion.li className='mt-[30px] ' variants={leftToRightVariant}>
+                <div className='w-[40px] h-[40px] bg-black rounded-full'></div>
+              </motion.li>
+              <motion.li className='mt-[10vh] ' variants={leftToRightVariant}>
                 <div className='w-[40px] h-[40px] bg-black rounded-full'></div>
               </motion.li>
             </ul>
           </motion.div>
 
-          <div className='pl-[2vw] -mt-[200px] sm:mt-0 '>
+          <div className='pl-[2vw] pr-[3vw] -mt-[200px] sm:mt-0 '>
             <motion.h1 className='mt-[25px]' variants={leftToRightVariant}>Plant Engineering</motion.h1>
-            <motion.h3 className='text-[15px]' variants={leftToRightVariant}>Basic Engineering Packages (BEP) and Front-End Engineering Design (FEED)</motion.h3>
-            <motion.h1 className='mt-[25px]' variants={leftToRightVariant}>Drafting services</motion.h1>
-            <motion.h3 className='text-[15px]' variants={leftToRightVariant}>Basic Engineering Packages (BEP) and Front-End Engineering Design (FEED)</motion.h3>
-            <motion.h1 className='mt-[25px]' variants={leftToRightVariant}>Project Engineering and management services</motion.h1>
-            <motion.h3 className='text-[15px]' variants={leftToRightVariant}>Basic Engineering Packages (BEP) and Front-End Engineering Design (FEED)</motion.h3>
+            <motion.h3 className='text-[15px]' variants={leftToRightVariant}>Optimizing plant layouts and designs to ensure smooth process flow, safety, and reliability. Our designs improve productivity, minimize downtime, and support long-term operational goals.</motion.h3>
+            <motion.h1 className='mt-[25px]' variants={leftToRightVariant}>Operational Excellence</motion.h1>
+            <motion.h3 className='text-[15px]' variants={leftToRightVariant}>We help our clients streamline operations with lean manufacturing principles, ensuring efficient processes, minimized waste, and timely project execution.</motion.h3>
+            <motion.h1 className='mt-[25px]' variants={leftToRightVariant}>Regulatory Compliance</motion.h1>
+            <motion.h3 className='text-[15px]' variants={leftToRightVariant}>We ensure full adherence to Canadian regulatory standards across industries, from environmental regulations to safety protocols, giving you peace of mind throughout the project lifecycle.</motion.h3>
+            <motion.h1 className='mt-[25px]' variants={leftToRightVariant}>Process System Engineering & Control</motion.h1>
+            <motion.h3 className='text-[15px]' variants={leftToRightVariant}>Our team designs advanced process systems that enhance plant performance. From automation to precise control systems, we ensure efficient, safe, and reliable operations.</motion.h3>
           </div>
         </motion.div>
       </div>

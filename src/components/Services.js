@@ -24,7 +24,7 @@ const Services = () => {
           <motion.div 
           
           className=' sm:w-[40vw] sm:ml-[30px]  '>
-              <p className='font-[Neue Montreal] mb-[20px]  text-[2.2vh] leading-6 font-semibold '>Welcome to JaysEnergy! We are your trusted partners in Design, Engineering, and Project Management. From Basic Engineering Packages to Front-End Engineering Design, from 2D and 3D Modeling Services to Plant Layout Engineering, and from Project Cost Estimation to Vendor Identification, we have got you covered.&nbsp;</p>    
+              <p className='font-[Neue Montreal] mb-[20px]  text-[2.2vh] leading-6 font-semibold '>Welcome to JayzEnergy! We are your trusted partners in Design, Engineering, and Project Management. From Basic Engineering Packages to Front-End Engineering Design, from 2D and 3D Modeling Services to Plant Layout Engineering, and from Project Cost Estimation to Vendor Identification, we have got you covered.&nbsp;</p>    
 
             </motion.div>
             
