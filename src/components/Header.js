@@ -1,5 +1,6 @@
 import React from 'react';
 import {  NavLink, useLocation } from 'react-router-dom';
+import logo from '../assets/logo.jpg'
 
 const Header = () => {
   const location = useLocation();  // Hook to get current location
@@ -10,7 +11,13 @@ const Header = () => {
   return (
     <div className=' mt-[20px] '>
       <div className={`fixed top-0   border-b-[0.2px] border-white  z-[10]   sm:w-full px-16 py-3 font-['Neue Montreal'] bg-zinc-100 sm:flex sm:justify-between sm:items-center opacity-100  ${isHome ? 'text-black' : 'text-black'}`}>
-        <p className={`${isHome && ""} text-3xl`}>JayzEnergy</p>
+        <p className={`${isHome && ""} text-3xl`}>
+        <div class="flex flex-col items-center ">
+        <div class="text-xl leading-[2.8vh]">Jayz</div>
+        <div class="text-xl leading-[2.8vh]">Consultancy</div>
+        <div class="text-xl leading-[2.8vh]">Services</div>
+    </div>
+        </p>
         <div className='flex -ml-[35px] gap-[5px]  sm:gap-10'>
           {["Home", "About", "Services", "Projects", "ContactUs"].map((item, index) => {
             const path = item === "Home" ? "/" : `/${item.toLowerCase()}`;

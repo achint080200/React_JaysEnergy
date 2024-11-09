@@ -31,7 +31,7 @@ const About = () => {
           <motion.h1 className='text-5xl capitalize text-white font-bold border-b-2 pb-3 border-green-400 w-screen sm:w-[50vw] block'
             variants={leftToRightVariant}
           >
-            Welcome to JaysEnergy
+            Welcome to Jayz Consultancy Services
           </motion.h1>
           <motion.p className='my-4 text-white text-[18px]' variants={leftToRightVariant}>
           Where innovation meets precision in engineering design.

@@ -24,7 +24,7 @@ const Services = () => {
           <motion.div 
           
           className=' sm:w-[40vw] sm:ml-[30px]  '>
-              <p className='font-[Neue Montreal] mb-[20px]  text-[2.2vh] leading-6 font-semibold '>Welcome to JayzEnergy! We are your trusted partners in Design, Engineering, and Project Management. From Basic Engineering Packages to Front-End Engineering Design, from 2D and 3D Modeling Services to Plant Layout Engineering, and from Project Cost Estimation to Vendor Identification, we have got you covered.&nbsp;</p>    
+              <p className='font-[Neue Montreal] mb-[20px]  text-[2.2vh] leading-6 font-semibold '>Welcome to Jayz Consultancy Services! We are your trusted partners in Design, Engineering, and Project Management. From Basic Engineering Packages to Front-End Engineering Design, from 2D and 3D Modeling Services to Plant Layout Engineering, and from Project Cost Estimation to Vendor Identification, we have got you covered.&nbsp;</p>    
 
             </motion.div>
             
@@ -99,7 +99,7 @@ const Services = () => {
             <div className='m-[7vw] sm:m-[2vw]'>
               <img className='sm:w-[3vw] ml-[2vw] ' src={icon3} alt='no render'/>
               <h1 className='sm:text-xl font-semibold mt-[1vw] '>Project Engineering & Management Services </h1>
-              <h4 className=' sm:text-[1vw] mt-[1vw]'>Our experinced professionals offer project management services ranging from bid documents, vender sourcing, quality management, inspection, and many more.</h4>
+              <h4 className=' sm:text-[1vw] mt-[1vw]'>Our experienced professionals offer project management services ranging from bid documents, vender sourcing, quality management, inspection, and many more.</h4>
               <ul className='list-disc sm:text-[1vw] ml-[2vw] mt-[1vw] font-bold'>
                 {
                   ["Project Management",

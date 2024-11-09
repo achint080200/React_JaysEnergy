@@ -41,7 +41,7 @@ const Home = () => {
           className="text-center w-[60%]"
         >
           <h2 className="text-4xl font-bold border-b-2 pb-2 border-green-400 mb-6">
-            Why JayzEnergy?
+            Why Jayz Consultancy Services?
           </h2>
           <p className="text-lg">
             Because we Manage Projects Professionally
