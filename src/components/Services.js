@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import Picture7 from '../assets/Picture7.png'
+import picture12 from '../assets/picture12.jpg'
 import icon1 from '../assets/icon1.png'
 import icon2 from '../assets/icon2.png'
 import icon3 from '../assets/icon3.png'
@@ -9,8 +9,8 @@ import icon3 from '../assets/icon3.png'
 const Services = () => {
   
   return (
-    <div className='h-auto mt-[100px] sm:m-0'>
-      <div className='sm:grid grid-cols-2 w-[100vw] h-[50vh]'>
+    <div className='h-auto  sm:m-0'>
+      <div className='sm:grid mt-[100px] grid-cols-2 w-[100vw] h-[50vh]'>
         <div className='ml-[50px] leading-[10vh] sm:leading-[18vh]'>
           <motion.div initial={{x:-100}}
           animate={{x:20}}
@@ -24,13 +24,13 @@ const Services = () => {
           <motion.div 
           
           className=' sm:w-[40vw] sm:ml-[30px]  '>
-              <p className='font-[Neue Montreal] mb-[20px]  text-[2.2vh] leading-6 font-semibold '>Welcome to Jayz Consultancy Services! We are your trusted partners in Design, Engineering, and Project Management. From Basic Engineering Packages to Front-End Engineering Design, from 2D and 3D Modeling Services to Plant Layout Engineering, and from Project Cost Estimation to Vendor Identification, we have got you covered.&nbsp;</p>    
+              <p className='font-[Neue Montreal] mb-[20px]  text-[2.2vh] leading-6 font-semibold '>Welcome to Jayz Energy! We are your trusted partners in Design, Engineering, and Project Management. From Basic Engineering Packages to Front-End Engineering Design, from 2D and 3D Modeling Services to Plant Layout Engineering, and from Project Cost Estimation to Vendor Identification, we have got you covered.&nbsp;</p>    
 
             </motion.div>
             
           </div>
           <div className=' absolute w-[90vw] ml-[30px] sm:ml-0 md:relative h-auto'>
-             <img className=' h-[40vh] sm:w-[50vw]  my-[6.5vw] pr-[2vw] rounded-[100px] object-cover' src={Picture7} alt='no render'/>
+             <img className=' h-[40vh] sm:w-[50vw]  my-[5vw] pr-[2vw] rounded-[100px] object-cover' src={picture12} alt='no render'/>
         
         
            </div>

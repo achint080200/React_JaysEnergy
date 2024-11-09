@@ -6,6 +6,7 @@ import Picture5 from '../assets/Picture5.png'
 import Picture4 from '../assets/Picture4.png'
 import Picture3 from '../assets/Picture3.png'
 import Picture2 from '../assets/Picture2.png'
+import picture11 from "../assets/picture11.jpeg"
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 //require("/Home.js")
@@ -18,6 +19,7 @@ const Projects = () => {
   const ref4 = useRef(null);
   const ref5 = useRef(null);
   const ref6 = useRef(null);
+  const ref7 = useRef(null);
   
   // Track when elements come into view
   const isInView1 = useInView(ref1, { once: true, amount: 0.3 });
@@ -26,6 +28,7 @@ const Projects = () => {
   const isInView4 = useInView(ref4, { once: true, amount: 0.3 });
   const isInView5 = useInView(ref5, { once: true, amount: 0.3 });
   const isInView6 = useInView(ref6, { once: true, amount: 0.3 });
+  const isInView7 = useInView(ref7, { once: true, amount: 0.3 });
 
   // Animation variants
   const textVariants = {
@@ -43,10 +46,10 @@ const Projects = () => {
     },
   };
   return (
-    <div className='sm:mt-[70px] mt-[100px]'>
-      <div className='sm:grid  w-screen sm:h-full   grid-cols-2 grid-rows-6'>
+    <div className='sm:mt-[70px] mt-[300px]'>
+      <div className='sm:grid  w-screen sm:h-full   grid-cols-2 grid-rows-6 mt-[150px]'>
         <div className='hidden sm:block sm:h-full '>
-          <img className=' w-full sm:h-full object-cover' src={Picture1} alt='no redner'/>
+          <img className=' w-full sm:h-full object-cover' src={picture11} alt='no redner'/>
         </div>
         <div className=' h-auto border-t-2 border-gray-200'>
         <motion.div
@@ -57,16 +60,19 @@ const Projects = () => {
             className='m-[10vw] font-[icomoon] h-auto'
           >
             <motion.h1 variants={textVariants} className='capitalize text-3xl font-bold'>
-              GAS COMPRESSOR UNIT
+            CANADIAN HOSPITAL UTILITY OPERATIONS SUPPORT
+
             </motion.h1>
             <motion.p variants={textVariants} className='my-[30px]'>
-              Detailed design and engineering of a Gas Compressor unit, skid package with a positive displacement compressor, and separators to compress natural gas.
+            Boosted efficiency and safety for a Canadian hospital’s utility systems, covering steam boilers, hot water boilers, deaerators, and pumps.
+
             </motion.p>
             <motion.p variants={textVariants} className='my-[30px]'>
-              Designing the skid package with limited space on-site, we performed stress analysis and dynamic analysis for all process lines. The skid package area measures nearly 50′ X 42′.
+            Developed easy-to-follow Standard Operating Procedures (SOPs) and detailed layup procedures with integrated safety instructions.
+
             </motion.p>
             <motion.p variants={textVariants}>
-              We also prepared engineering drawings and documents for all disciplines, including Process, Mechanical, Piping, and CSA.
+            Enhanced equipment reliability, streamlined operations, and provided robust guidelines for staff training and compliance.
             </motion.p>
           </motion.div>
           
@@ -186,6 +192,33 @@ const Projects = () => {
         </div>
         <div className=' h-full hidden sm:block '>
          <img className=' w-full h-full object-cover' src={Picture2} alt='no redner'/>
+        </div>
+        
+        <div className=' h-full hidden sm:block '>
+         <img className=' w-full h-full object-cover' src={Picture1} alt='no redner'/>
+        </div>
+        <div className=' h-auto border-t-2 border-gray-200'>
+        <motion.div
+            ref={ref7}
+            initial="hidden"
+            animate={isInView7 ? "visible" : "hidden"}
+            variants={staggerContainer}
+            className='m-[10vw] font-[icomoon] h-auto'
+          >
+            <motion.h1 variants={textVariants} className='capitalize text-3xl font-bold'>
+              GAS COMPRESSOR UNIT
+            </motion.h1>
+            <motion.p variants={textVariants} className='my-[30px]'>
+              Detailed design and engineering of a Gas Compressor unit, skid package with a positive displacement compressor, and separators to compress natural gas.
+            </motion.p>
+            <motion.p variants={textVariants} className='my-[30px]'>
+              Designing the skid package with limited space on-site, we performed stress analysis and dynamic analysis for all process lines. The skid package area measures nearly 50′ X 42′.
+            </motion.p>
+            <motion.p variants={textVariants}>
+              We also prepared engineering drawings and documents for all disciplines, including Process, Mechanical, Piping, and CSA.
+            </motion.p>
+          </motion.div>
+          
         </div>
         
 

@@ -1,16 +1,22 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import picture9 from "../assets/picture9.jpg";
 
 const Home = () => {
   return (
-    <div className="w-screen h-auto text-white font-[Sans]">
+    <div className=" w-screen h-auto text-white font-[Sans] bg-black mt-[100px]">
       {/* Hero Section */}
-      <div className="relative h-screen bg-[url('https://mppesp.com/wp-content/uploads/2023/11/pexels-loic-manegarium-3855962-scaled.jpg')] bg-cover bg-center flex justify-center items-center">
+      <div className="relative h-screen flex justify-center items-center overflow-hidden">
+        <img
+          src={picture9}
+          alt="Background"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="text-center"
+          className="relative z-10 text-center"
         >
           <motion.h1
             initial={{ x: -100, opacity: 0 }}
@@ -41,7 +47,7 @@ const Home = () => {
           className="text-center w-[60%]"
         >
           <h2 className="text-4xl font-bold border-b-2 pb-2 border-green-400 mb-6">
-            Why Jayz Consultancy Services?
+            Why Jayz Energy?
           </h2>
           <p className="text-lg">
             Because we Manage Projects Professionally
@@ -69,7 +75,7 @@ const Home = () => {
           </p>
         </motion.div>
 
-        {/* Example Service Cards */}
+        {/* Service Cards */}
         <div className="sm:grid sm:grid-cols-3 sm:gap-8 flex flex-col gap-5 w-[80%]">
           {[1, 2, 3].map((item, index) => (
             <motion.div
@@ -79,44 +85,34 @@ const Home = () => {
               transition={{ duration: 0.8, delay: index * 0.3 }}
               viewport={{ once: true }}
               className="bg-white text-black rounded-lg p-6"
-            >{
-              item === 1 && <><img
-              src={`https://media.istockphoto.com/id/1185246554/photo/electricity-engineer-and-his-supervisor-at-industrial-facility.jpg?s=612x612&w=0&k=20&c=MkcXS-aSok4AHJbppJJn8tJwMfyEc-dCN51g06HvmUs=`}
-              alt="Service"
-              className="rounded-t-lg w-full h-[200px] object-cover"
-            /></>
-            }
-            {
-              item === 2 && <><img
-              src={`https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
-              alt="Service"
-              className="rounded-t-lg w-full h-[200px] object-cover"
-            /></>
-            }
-            {
-              item === 3 && <><img
-              src={`https://plus.unsplash.com/premium_photo-1664301210337-decaba308a41?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
-              alt="Service"
-              className="rounded-t-lg w-full h-[200px] object-cover"
-            /></>
-            }
-              
-              <h3 className="text-2xl font-bold mt-4">Service {item}</h3>{
-                item === 1 &&  <><h1 className='text-xl font-semibold mt-[1vw] '>Plant Engineering </h1>
-                <h4 className=' sm:text-[1vw] mt-[1vw]'>Optimizing plant layouts and designs to ensure smooth process flow, safety, and reliability. Our designs improve productivity, minimize downtime, and support long-term operational goals.</h4></>
-                
-              }
-              {
-                item === 2 && <><h1 className='text-xl font-semibold mt-[1vw] '>Operational Excellence </h1>
-              <h4 className=' sm:text-[1vw] mt-[1vw]'>We help our clients streamline operations with lean manufacturing principles, ensuring efficient processes, minimized waste, and timely project execution.
-              </h4></>
-              }
-              {
-                item === 3 && <>
-                <h1 className='text-xl font-semibold mt-[1vw] '>Regulatory Compliance </h1>
-                <h4 className=' sm:text-[1vw] mt-[1vw]'>We ensure full adherence to Canadian regulatory standards across industries, from environmental regulations to safety protocols, giving you peace of mind throughout the project lifecycle.</h4></>
-              }
-              
+            >
+              {/* Dynamically Render Images and Content */}
+              <img
+                src={
+                  item === 1
+                    ? "https://media.istockphoto.com/id/1185246554/photo/electricity-engineer-and-his-supervisor-at-industrial-facility.jpg?s=612x612&w=0&k=20&c=MkcXS-aSok4AHJbppJJn8tJwMfyEc-dCN51g06HvmUs="
+                    : item === 2
+                    ? "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    : "https://plus.unsplash.com/premium_photo-1664301210337-decaba308a41?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
+                alt="Service"
+                className="rounded-t-lg w-full h-[200px] object-cover"
+              />
+              <h3 className="text-2xl font-bold mt-4">Service {item}</h3>
+              <h1 className="text-xl font-semibold mt-4">
+                {item === 1
+                  ? "Plant Engineering"
+                  : item === 2
+                  ? "Operational Excellence"
+                  : "Regulatory Compliance"}
+              </h1>
+              <h4 className="text-lg mt-2">
+                {item === 1
+                  ? "Optimizing plant layouts and designs to ensure smooth process flow, safety, and reliability."
+                  : item === 2
+                  ? "We help our clients streamline operations with lean manufacturing principles, ensuring efficient processes."
+                  : "Ensuring adherence to Canadian regulatory standards across industries for peace of mind."}
+              </h4>
             </motion.div>
           ))}
         </div>

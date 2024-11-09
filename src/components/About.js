@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import picture10 from "../assets/picture10.jpg"
 
 const About = () => {
   // Use intersection observer for the different sections
@@ -31,7 +32,7 @@ const About = () => {
           <motion.h1 className='text-5xl capitalize text-white font-bold border-b-2 pb-3 border-green-400 w-screen sm:w-[50vw] block'
             variants={leftToRightVariant}
           >
-            Welcome to Jayz Consultancy Services
+            Welcome to Jayz Energy
           </motion.h1>
           <motion.p className='my-4 text-white text-[18px]' variants={leftToRightVariant}>
           Where innovation meets precision in engineering design.
@@ -42,7 +43,7 @@ const About = () => {
           <motion.p className='text-white text-[18px]' variants={leftToRightVariant}>
           We believe in collaboration and the transformative power of well-engineered systems. Our team combines expertise to exceed client expectations, providing reliable, lasting results.
           </motion.p>
-          <motion.p className='text-white text-[18px]' variants={leftToRightVariant}>
+          <motion.p className='text-white mt-4 text-[18px]' variants={leftToRightVariant}>
           Whether optimizing existing systems or designing new ones, Jayz Energy delivers solutions that are built to last and fit for purpose, meeting the unique challenges of your projects.
           </motion.p>
         </motion.div>
@@ -50,13 +51,13 @@ const About = () => {
 
       {/* Section 2: Image and List */}
       <div className='sm:flex flex-row items-center gap-[200px]'>
-        <div ref={section2Ref} className='mt-[0px] w-screen sm:w-10/12 h-[60vh]'>
+        <div ref={section2Ref} className='mt-[0px]  sm:w-10/12 h-[70vh]'>
           <motion.img 
             initial={{ opacity: 0, scale: 0 }}
             animate={section2InView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
             transition={{ duration: 0.5 }}
             className='object-cover rounded-br-[200px] h-full w-full'
-            src='https://mppesp.com/wp-content/uploads/2023/11/pexels-magda-ehlers-2569842-scaled.jpg' 
+            src={picture10} 
             alt='no render'
           />
         </div>
