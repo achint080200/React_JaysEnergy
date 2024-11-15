@@ -20,16 +20,16 @@ const About = () => {
   }
 
   return (
-    <div className='text-black text-3xl font-[Sans]'>
+    <div className='text-black  mt-[150px] sm:mt-0 text-3xl font-[Sans]'>
       {/* Section 1 */}
-      <div ref={section1Ref} className='w-full mt-[100px] sm:py-[10vh] my-[20px] h-auto bg-[#1f1f1f] rounded-br-[10vw] flex flex-col'>
+      <div ref={section1Ref} className='w-full mt-[100px] pl-[10px] sm:py-[10vh] my-[20px] h-auto bg-[#1f1f1f] rounded-br-[10vw] flex flex-col'>
         <motion.div 
           className='sm:mx-[30vw] font-[Mona Sans] w-screen sm:w-[40vw]'
           variants={staggerContainer}
           initial="hidden"
           animate={section1InView ? "visible" : "hidden"}
         >
-          <motion.h1 className='text-5xl capitalize text-white font-bold border-b-2 pb-3 border-green-400 w-screen sm:w-[50vw] block'
+          <motion.h1 className='text-3xl sm:text-5xl capitalize text-white font-bold border-b-2 pb-3 border-green-400 w-screen sm:w-[50vw] block'
             variants={leftToRightVariant}
           >
             Welcome to Jayz Energy
@@ -64,12 +64,12 @@ const About = () => {
 
         {/* List with staggered animations */}
         <motion.div 
-          className=' flex  sm:grid grid-cols-2 sm:-space-x-[320px] sm:items-center '
+          className='   sm:grid grid-cols-2 sm:-space-x-[320px] sm:items-center '
           initial="hidden"
           animate={section2InView ? "visible" : "hidden"}
           variants={staggerContainer}
         >
-          <motion.div variants={leftToRightVariant} className='flex '>
+          <motion.div variants={leftToRightVariant} className='sm:flex mt-[220px] sm:mt-0'>
             <ul className='hidden sm:block -mt-[4vh]'>
               <motion.li className='mb-[150px]' variants={leftToRightVariant}>
                 <div className='w-[40px] h-[40px] bg-black rounded-full'></div>

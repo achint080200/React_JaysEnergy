@@ -16,13 +16,13 @@ const Home = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="relative z-10 text-center"
+          className="relative  text-center"
         >
           <motion.h1
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-7xl font-bold text-white"
+            className=" text-5xl sm:text-7xl font-bold text-white"
           >
             Precision, Performance, Perfection
           </motion.h1>

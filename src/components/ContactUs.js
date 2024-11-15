@@ -38,7 +38,7 @@ const ContactUs = () => {
             initial={{ x: -100 }}
             animate={{ x: 50 }}
             transition={{ s: 2000 }}
-            className='uppercase text-4xl sm:text-8xl leading-[7vw] tracking-tight font-semibold'
+            className='uppercase text-3xl sm:text-8xl sm:leading-[7vw] tracking-tight font-semibold'
           >
             {item}
           </motion.h1>
@@ -46,8 +46,8 @@ const ContactUs = () => {
       </div>
       <div className='sm:flex gap-[300px] mx-[60px]'>
         <div>
-          <h1 className='text-3xl font-semibold mb-[100px]'>Inquiries:</h1>
-          <h3 className='w-[150px]'>Please fill out the form on the right or email us directly.</h3>
+          <h1 className='text-3xl font-semibold mb-1 sm:mb-[100px]'>Inquiries:</h1>
+          <h3 className='sm:w-[150px] mb-1'>Please fill out the form on the right or email us directly.</h3>
         </div>
         <div>
           {isSubmitted ? (

@@ -9,9 +9,9 @@ import icon3 from '../assets/icon3.png'
 const Services = () => {
   
   return (
-    <div className='h-auto  sm:m-0'>
-      <div className='sm:grid mt-[100px] grid-cols-2 w-[100vw] h-[50vh]'>
-        <div className='ml-[50px] leading-[10vh] sm:leading-[18vh]'>
+    <div className='h-auto  sm:m-0 sm:mt-0'>
+      <div className='sm:grid mt-[150px] sm:mt-[100px] grid-cols-2 w-[100vw] h-[50vh]'>
+        <div className=' sm:ml-[50px] leading-[11vh] sm:leading-[18vh]'>
           <motion.div initial={{x:-100}}
           animate={{x:20}}
           transition={{duration:1}}
@@ -23,14 +23,14 @@ const Services = () => {
           </motion.div>
           <motion.div 
           
-          className=' sm:w-[40vw] sm:ml-[30px]  '>
+          className=' sm:w-[40vw] ml-[20px] sm:ml-[30px]  '>
               <p className='font-[Neue Montreal] mb-[20px]  text-[2.2vh] leading-6 font-semibold '>Welcome to Jayz Energy! We are your trusted partners in Design, Engineering, and Project Management. From Basic Engineering Packages to Front-End Engineering Design, from 2D and 3D Modeling Services to Plant Layout Engineering, and from Project Cost Estimation to Vendor Identification, we have got you covered.&nbsp;</p>    
 
             </motion.div>
             
           </div>
           <div className=' absolute w-[90vw] ml-[30px] sm:ml-0 md:relative h-auto'>
-             <img className=' h-[40vh] sm:w-[50vw]  my-[5vw] pr-[2vw] rounded-[100px] object-cover' src={picture12} alt='no render'/>
+             <img className=' h-[40vh] sm:w-[50vw]  my-[5vw] pr-[2vw] sm:rounded-[100px] object-cover' src={picture12} alt='no render'/>
         
         
            </div>
@@ -43,7 +43,7 @@ const Services = () => {
           initial={{scale:0}}
           animate={{scale: 1}}
           transition={{duration:1}}
-          className='border border-black  rounded-[100px]  sm:w-[25vw] mb-3 sm:mb-0 h-auto '>
+          className='border border-black  sm:rounded-[100px]  sm:w-[25vw] mb-3 sm:mb-0 h-auto '>
             <div className=' m-[7vw] sm:m-[2vw] '>
               <img className='sm:w-[3vw] ml-[2vw]' src={icon1} alt='no render'/>
               <h1 className='text-xl font-semibold mt-[1vw] '>Plant Engineering </h1>
@@ -71,7 +71,7 @@ const Services = () => {
           animate={{scale:1}}
           transition={{duration:1}} 
           
-          className='border border-black  rounded-[100px] sm:w-[25vw] mb-3 sm:mb-0 auto'>
+          className='border border-black  sm:rounded-[100px] sm:w-[25vw] mb-3 sm:mb-0 auto'>
             <div className='m-[7vw] sm:m-[2vw]'>
               <img className='sm:w-[3vw] ml-[2vw] ' src={icon2} alt='no render'/>
               <h1 className='sm:text-xl font-semibold mt-[1vw] '>Drafting Services </h1>
@@ -95,7 +95,7 @@ const Services = () => {
           animate={{scale:1}}
           transition={{duration:1}}
           
-          className='border border-black  rounded-[100px] sm:w-[25vw] h-auto'>
+          className='border border-black  sm:rounded-[100px] sm:w-[25vw] h-auto'>
             <div className='m-[7vw] sm:m-[2vw]'>
               <img className='sm:w-[3vw] ml-[2vw] ' src={icon3} alt='no render'/>
               <h1 className='sm:text-xl font-semibold mt-[1vw] '>Project Engineering & Management Services </h1>
