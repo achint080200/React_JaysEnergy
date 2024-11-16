@@ -16,7 +16,7 @@ const Header = () => {
         <img className='h-[10vh] ' alt='no render' src={logo}/>
    
         </p>
-        <div className='flex -ml-[35px] gap-[2vw]  sm:gap-10'>
+        <div className='flex -ml-[50px] gap-[2vw]  sm:gap-10'>
           {["Home", "About", "Services", "Projects", "ContactUs"].map((item, index) => {
             const path = item === "Home" ? "/" : `/${item.toLowerCase()}`;
             return (

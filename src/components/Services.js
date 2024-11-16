@@ -29,8 +29,8 @@ const Services = () => {
             </motion.div>
             
           </div>
-          <div className=' absolute w-[90vw] ml-[30px] sm:ml-0 md:relative h-auto'>
-             <img className=' h-[40vh] sm:w-[50vw]  my-[5vw] pr-[2vw] sm:rounded-[100px] object-cover' src={picture12} alt='no render'/>
+          <div className=' absolute w-[90vw] sm:w-[90vw] ml-[20px] sm:ml-0 md:relative h-auto'>
+             <img className=' h-[40vh]  sm:w-[50vw]  my-[5vw] pr-[1vw] sm:rounded-[100px] object-cover' src={picture12} alt='no render'/>
         
         
            </div>

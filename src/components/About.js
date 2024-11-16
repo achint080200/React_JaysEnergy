@@ -100,7 +100,7 @@ const About = () => {
       </div>
 
       {/* Final Section */}
-      <div className='w-[70vw] mx-[15vw] h-auto bg-black mt-[30px] rounded-tl-[10vw] rounded-br-[10vw]'>
+      <div className='w-[70vw] mx-[15vw] h-auto bg-black mt-[30px] sm:rounded-tl-[10vw] sm:rounded-br-[10vw]'>
         <h1 className='pl-[40px] py-[40px] text-white text-4xl capitalize font-[Sans]'>Our Promise is to Deliver Innovative and Efficient Engineering Design Solutions Tailored to the Unique Needs</h1>
       </div>
     </div>
