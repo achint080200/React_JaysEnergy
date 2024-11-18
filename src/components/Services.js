@@ -9,7 +9,7 @@ import icon3 from '../assets/icon3.png'
 const Services = () => {
   
   return (
-    <div className='h-auto  sm:m-0 sm:mt-0'>
+    <div className='h-auto font-roboto  sm:m-0 sm:mt-0'>
       <div className='sm:grid mt-[150px] sm:mt-[100px] grid-cols-2 w-[100vw] h-[50vh]'>
         <div className=' sm:ml-[50px] leading-[11vh] sm:leading-[18vh]'>
           <motion.div initial={{x:-100}}

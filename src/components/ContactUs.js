@@ -30,7 +30,7 @@ const ContactUs = () => {
   });
 
   return (
-    <div className='mt-[200px]'>
+    <div className='mt-[200px] font-roboto'>
       <div className='w-[100vw] h-auto mb-[100px] sm:h-[60vh]  font-[Test_Founders_Grotesk_X-Condensed] '>
         {["Let's Start", "A project together"].map((item, index) => (
           <motion.h1

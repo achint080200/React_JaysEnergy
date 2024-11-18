@@ -4,7 +4,7 @@ import picture9 from "../assets/picture9.jpg";
 
 const Home = () => {
   return (
-    <div className=" w-screen h-auto text-white font-[Sans] bg-black mt-[100px]">
+    <div className=" w-screen h-auto text-white font-roboto bg-black mt-[100px]">
       {/* Hero Section */}
       <div className="relative h-screen flex justify-center items-center overflow-hidden">
         <img
@@ -49,9 +49,9 @@ const Home = () => {
           <h2 className="text-4xl font-bold border-b-2 pb-2 border-green-400 mb-6">
             Why Jayz Energy?
           </h2>
-          <p className="text-lg">
+          {/* <p className="text-lg">
             Because we Manage Projects Professionally
-          </p>
+          </p> */}
           <p className="text-lg mt-4">
             We are value-driven professionals who believe in collaboration. We work closely with our clients, listening to their ideas and goals, to ensure that our designs align perfectly with their vision.
           </p>
@@ -98,7 +98,7 @@ const Home = () => {
                 alt="Service"
                 className="rounded-t-lg w-full h-[200px] object-cover"
               />
-              <h3 className="text-2xl font-bold mt-4">Service {item}</h3>
+              {/* <h3 className="text-2xl font-bold mt-4">Service {item}</h3> */}
               <h1 className="text-xl font-semibold mt-4">
                 {item === 1
                   ? "Plant Engineering"

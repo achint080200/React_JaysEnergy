@@ -20,7 +20,7 @@ const About = () => {
   }
 
   return (
-    <div className='text-black  mt-[150px] sm:mt-0 text-3xl font-[Sans]'>
+    <div className='text-black  mt-[150px] sm:mt-0 text-3xl font-roboto'>
       {/* Section 1 */}
       <div ref={section1Ref} className='w-full mt-[100px] pl-[10px] sm:py-[10vh] my-[20px] h-auto bg-[#1f1f1f] rounded-br-[10vw] flex flex-col'>
         <motion.div 

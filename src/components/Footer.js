@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='static  sm:bottom-0 mt-[100px] h-[50vh]  w-screen sm:h-[50vh] bg-black text-white'>
+    <div className='static font-roboto sm:bottom-0 mt-[100px] h-[50vh]  w-screen sm:h-[50vh] bg-black text-white'>
         <div className='sm:flex sm:justify-between gap-[100px] mx-[60px] pt-7'>
             <div>
                 <p className="text-3xl text-white">Jayz Energy</p>

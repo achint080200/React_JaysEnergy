@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className=" w-screen sm:w-full h-screen font-[Mona Sans] text-black ">
+    <div className=" w-screen sm:w-full h-screen font-roboto text-black ">
       <Header/>
       <Outlet/>
       <Footer/>

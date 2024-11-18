@@ -46,7 +46,7 @@ const Projects = () => {
     },
   };
   return (
-    <div className='sm:mt-[70px] mt-[200px]'>
+    <div className='sm:mt-[70px] font-roboto mt-[200px]'>
       <div className='flex flex-wrap sm:grid  w-screen sm:h-full   grid-cols-2 grid-rows-6 mt-[150px]'>
         <div className='hidden sm:block sm:h-full '>
           <img className=' w-full sm:h-full object-cover' src={picture11} alt='no redner'/>
